@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	pb "github.com/vairarchi/go-grpc-learning/greet/proto"
+	pb "github.com/vairarchi/go-grpc-learning/calculator/proto"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 )
@@ -17,7 +17,7 @@ func main() {
 	}
 	defer conn.Close()
 
-	c := pb.NewGreetServiceClient(conn)
+	s := pb.NewSumServiceClient(conn)
 
-	doGreet(c)
+	doSum(s)
 }
