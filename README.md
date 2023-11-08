@@ -14,4 +14,8 @@ So after hsving the makefile we can simple type the command:
     make greet
     make help // to see what all commands are associated with make
 
+    make greet
+    (after the executables are made)
+    ./bin/greet/<client/server>
+
 
