@@ -7,7 +7,7 @@ import (
 	pb "github.com/vairarchi/go-grpc-learning/calculator/proto"
 )
 
-func doSum(s pb.SumServiceClient) {
+func doSum(s pb.CalculatorServiceClient) {
 	log.Printf("doSum() is invoked")
 
 	res, err := s.Sum(context.Background(), &pb.SumRequest{
