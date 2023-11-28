@@ -19,3 +19,9 @@ So after hsving the makefile we can simple type the command:
     ./bin/greet/<client/server>
 
 
+>Note: To start writing the server code
+ - you have to make use of the generated .pb.go file 
+ - search for <name>serviceServer interface in the file
+ - in that interface you will get the function definition of the function that needs to be implemented in the server file
+ - For ex: if you are adding `GreetWithDeadline` rpc, after generating the greet_grpc.pb.go file, search for `GreetServiceServer` and copy the function definition `GreetWithDeadline(context.Context, *GreetRequest) (*GreetResponse, error)` which needs to be implemented on the server side
+
