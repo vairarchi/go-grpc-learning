@@ -25,3 +25,12 @@ So after hsving the makefile we can simple type the command:
  - in that interface you will get the function definition of the function that needs to be implemented in the server file
  - For ex: if you are adding `GreetWithDeadline` rpc, after generating the greet_grpc.pb.go file, search for `GreetServiceServer` and copy the function definition `GreetWithDeadline(context.Context, *GreetRequest) (*GreetResponse, error)` which needs to be implemented on the server side
 
+
+>For SSL:
+    - get the file ssl.sh from https://raw.githubusercontent.com/Clement-Jean/grpc-go-course/master/ssl/ssl.sh and place it in the folder named `ssl`
+    - Commands:
+        > cd ssl
+        > chmod +x ssl.sh
+        > ./ssl.sh 
+    - Since we will now have all the required files we can use them is `server` and `client` of `greet`
+
