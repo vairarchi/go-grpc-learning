@@ -21,5 +21,6 @@ func main() {
 
 	// doSum(s)
 	// doPrimes(s)
-	doAverage(s)
+	// doAverage(s)
+	doMax(s)
 }
