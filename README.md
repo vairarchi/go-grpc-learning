@@ -29,8 +29,8 @@ So after hsving the makefile we can simple type the command:
 >For SSL:
 - get the file ssl.sh from https://raw.githubusercontent.com/Clement-Jean/grpc-go-course/master/ssl/ssl.sh and place it in the folder named `ssl`
 - Commands:
-    > cd ssl
-    > chmod +x ssl.sh
-    > ./ssl.sh 
+    - cd ssl
+    - chmod +x ssl.sh
+    - ./ssl.sh 
 - Since we will now have all the required files we can use them is `server` and `client` of `greet`
 
