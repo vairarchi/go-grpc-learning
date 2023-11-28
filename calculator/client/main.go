@@ -22,5 +22,6 @@ func main() {
 	// doSum(s)
 	// doPrimes(s)
 	// doAverage(s)
-	doMax(s)
+	// doMax(s)
+	doSqrt(s, -54)
 }
