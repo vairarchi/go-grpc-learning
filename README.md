@@ -34,3 +34,8 @@ So after hsving the makefile we can simple type the command:
     - ./ssl.sh 
 - Since we will now have all the required files we can use them is `server` and `client` of `greet`
 
+
+> Using cli for client
+- use evans
+- download evans from the releases section https://github.com/ktr0731/evans
+- to start the cli: evans --host localhost --port 50051 --reflection repl
